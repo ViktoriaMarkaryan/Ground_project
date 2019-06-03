@@ -3,9 +3,49 @@
 \*------------------------------------*/
 
 h1, h2, h3, h4, h5, h6
-{
-    font-family: 'Roboto Slab', serif;
-}
+/*[ FONT ]
+///////////////////////////////////////////////////////////
+*/
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-Medium;
+    src: url('../fonts/montserrat/Montserrat-Medium.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-Italic;
+    src: url('../fonts/montserrat/Montserrat-Italic.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-Black;
+    src: url('../fonts/montserrat/Montserrat-Black.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Linearicons;
+    src: url('../fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Black;
+    src: url('../fonts/poppins/Poppins-Black.ttf'); 
+  }
 
 h1, h2, h3, h4, h5, h6
 {
@@ -42,6 +82,69 @@ span.x4:before, i.x4:before
     font-size: 6em;
 }
 
+/*[ Top bar ]
+===========================================================*/
+.topbar {
+    height: 45px;
+    background-color: #1d1d1d;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  /* ------------------------------------ */
+  
+  .topbar-social {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+  }
+  
+  .topbar-social-item {
+    font-size: 18px;
+    color: #888888;
+    padding: 10px;
+  }
+  
+  /* ------------------------------------ */
+  .topbar-email,
+  .topbar-child1 {
+    font-family: Montserrat-Regular;
+    font-size: 13px;
+    color: #888888;
+    line-height: 1.7;
+  }
+  
+  /* ------------------------------------ */
+  .topbar-child2 {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 38px;
+  }
+  
 
 /*------------------------------------*\
 	HEADER
@@ -144,10 +247,7 @@ header .container-fluid
     background-position: center;
 }
 
-.gallery
-{
-    background-color: #dddddd;
-}
+
 
 .prefooter .container-fluid
 {
