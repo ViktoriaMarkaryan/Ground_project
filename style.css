@@ -50,7 +50,7 @@ span.x4:before, i.x4:before
 header .container-fluid
 {
     
-    background-image: url('https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2702&q=80');
+    background-image: url('https://images.unsplash.com/uploads/141247613151541c06062/c15fb37d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -109,7 +109,7 @@ header .container-fluid
 
 .number .container-fluid
 {
-    background-image: url('https://unsplash.it/3000/2000?image=685');
+    background-image: url(https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -119,7 +119,7 @@ header .container-fluid
 {
     padding-top: 3em;
     padding-bottom: 3em;
-    background-color: rgba(128, 215, 247, 0.660);
+    background-color: rgba(174, 174, 218, 0.226);
 }
 
 .opaline h1,
@@ -148,7 +148,7 @@ header .container-fluid
 
 .story .container-fluid
 {
-    background-image: url('https://unsplash.it/3000/2000?image=531');
+    background-image: url(https://images.unsplash.com/reserve/HgZuGu3gSD6db21T3lxm_San%20Zenone.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -166,7 +166,7 @@ header .container-fluid
       rgba(33, 37, 43, 0.6)
     ),
 
-    url(https://unsplash.it/4000/3000?image=528);
+    url(https://images.unsplash.com/reserve/HgZuGu3gSD6db21T3lxm_San%20Zenone.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
 }
 
 .prefooter h1,
