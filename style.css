@@ -49,11 +49,13 @@ span.x4:before, i.x4:before
 
 header .container-fluid
 {
+    
     background-image: url('https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2702&q=80');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     padding-top: 36px;
+    opacity: .8; 
 }
 
 .hamburger
