@@ -136,19 +136,11 @@ header .container-fluid
 }
 
 
-.story .container-fluid
-{
-    background-image: url(https://images.unsplash.com/reserve/HgZuGu3gSD6db21T3lxm_San%20Zenone.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 
 .gallery
 {
     background-color: #dddddd;
 }
-
 .prefooter .container-fluid
 {
     background: linear-gradient(
