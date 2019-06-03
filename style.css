@@ -55,7 +55,9 @@ header .container-fluid
     background-size: cover;
     height: 100vh;
     padding-top: 36px;
-    opacity: .8; 
+    background-color: rgba(0, 0, 0, 0.3) !important;
+
+    background-blend-mode: hue;
 }
 
 .hamburger
