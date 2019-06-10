@@ -120,14 +120,9 @@ span.x4:before, i.x4:before
     color: #888888;
     line-height: 1.7;
   }
-  /*--------------------------*/
-  .topbar-child2 {
-    position: absolute;
-  }
-
   
   /* ------------------------------------ */
-  .topbar-child3 {
+  .topbar-child2 {
     position: absolute;
     height: 100%;
     top: 0;
