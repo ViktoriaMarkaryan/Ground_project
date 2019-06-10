@@ -2,10 +2,9 @@
 	COMMONS CLASSES
 \*------------------------------------*/
 
-h1, h2, h3, h4, h5, h6{}
+
 /*[ FONT ]
-///////////////////////////////////////////////////////////
-*/
+/////////////////////////////////////////////////////*/
 
 @font-face {
     font-family: Montserrat-Regular;
@@ -46,11 +45,6 @@ h1, h2, h3, h4, h5, h6{}
     font-family: Poppins-Black;
     src: url('../fonts/poppins/Poppins-Black.ttf'); 
   }
-
-h1, h2, h3, h4, h5, h6
-{
-    margin-bottom: 1.1em;
-}
 
 .features,
 .blog,
