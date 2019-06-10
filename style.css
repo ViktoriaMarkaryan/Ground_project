@@ -111,6 +111,22 @@ span.x4:before, i.x4:before
     color: #888888;
     padding: 10px;
   }
+<<<<<<< HEAD
+=======
+  
+  /* ------------------------------------ */
+  .topbar-email,
+  .topbar-child1 {
+    font-family: Montserrat-Regular;
+    font-size: 13px;
+    color: #888888;
+    line-height: 1.7;
+  }
+  /*--------------------------*/
+  .topbar-child2 {
+    position: absolute;
+  }
+>>>>>>> master
 
   
   /* ------------------------------------ */
