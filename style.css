@@ -140,12 +140,12 @@ span.x4:before, i.x4:before
 header .container-fluid
 {
     
-    background-image: url('https://images.unsplash.com/uploads/141247613151541c06062/c15fb37d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
+    background-image: url(https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1531&q=80);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    padding-top: 36px;
-    background-color: rgba(0, 0, 0, 0.3) !important;
+    
+    
+    padding-top: 50px;
+    background-color: rgba(158, 157, 157, 0.534) !important;
 
     background-blend-mode: hue;
 }
@@ -158,7 +158,7 @@ header .container-fluid
 
 .hamburger:hover
 {
-  color: #FFF;
+  color: rgb(0, 0, 0);
   cursor: pointer;
 }
 
@@ -183,12 +183,12 @@ header .container-fluid
 .jumbotron h6,
 .jumbotron small
 {
-    color: #FFFFFF;
+    color:black;
 }
 
 .jumbotron p
 {
-    color: #FFFFFF;
+    color:black;
     margin-bottom: 5%;
 }
 
@@ -203,7 +203,7 @@ header .container-fluid
 {
     padding-top: 3em;
     padding-bottom: 3em;
-    background-color: rgba(174, 174, 218, 0.226);
+    background-color: rgba(0, 0, 0, 0.226);
 }
 
 .opaline h1,
