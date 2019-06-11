@@ -1,35 +1,36 @@
 <?php
 
-$string = file_get_contents("config.json");
-$option = json_decode($string);
-
-define("MAIL_HOST", $option->MAIL_HOST);
-define("MAIL_TITLE", $option->MAIL_TITLE);
-
-if( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['msg'])){
-    $name = $_POST['name'];
+ini_set('display_errors', 'on');
+$db = new PDO('mysql:host=127.0.0.1:3306;dbname=pdo', 'root', 'root');
+if (!empty($_POST)){
     $email = $_POST['email'];
-    $msg = nl2br($_POST['msg']);
-    if (MAIL_HOST != null) {
-        $to = MAIL_HOST;
-    } else {
-        $to = "lebach.tk@gmail.com";
-    }
-    $from = $email;
-    if (MAIL_TITLE != null) {
-        $subject = MAIL_TITLE;
-    } else {
-        $subject = '[Consulting] Contact Form Message';
-    }
-    $message = '<b>Name:</b> '.$name.' <br><b>Email:</b> '.$email.' <br> <p>'.$msg.'</p>';
-    $headers = "From: $from\n";
-    $headers .= "MIME-Version: 1.0\n";
-    $headers .= "Content-type: text/html; charset=iso-8859-1\n";
-    if( mail($to, $subject, $message, $headers) ) {
-        $serialized_data = '{"type":"success", "message":"Contact form successfully submitted. Thank you, I will get back to you soon!"}';
-        echo $serialized_data;
-    } else {
-        $serialized_data = '{"type":"danger", "message":"Contact form failed. Please send again later!"}';
-        echo $serialized_data;
-    }
-};
+    $firstName = $_POST['first_name'];
+    $lastName = $_POST['last_name'];
+    
+    $user = $db->prepare("
+        INSERT INTO users (email, first_name, last_name)
+        VALUES (:email, :first_name, :last_name)
+    ");
+    
+    $user->execute([
+        'email' => $email,
+        'first_name' => $firstName,
+        'last_name' => $lastName,
+    ]);    
+}
+?>
+<!DOCTYPE httml>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PDO</title>
+    </head>
+    <body>
+        <form action="index.php" method="post" autocomplete="off">
+            <input type="text" name="email" placeholder="Email">
+            <input type="text" name="first_name" placeholder="First name">
+            <input type="text" name="last_name" placeholder="Last name">
+            <input type="submit" value="Register">
+        </form>
+    </body>
+</html>
