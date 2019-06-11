@@ -110,7 +110,7 @@ span.x4:before, i.x4:before
   font-size: 18px;
   color: #888888;
   padding: 10px;
-
+}
 
 /* ------------------------------------ */
 .topbar-child3 {
@@ -128,6 +128,59 @@ span.x4:before, i.x4:before
   padding-right: 38px;
 }
 
+
+/*------------------------------------*\
+HEADER
+\*------------------------------------*/
+
+header .container-fluid
+{
+  
+  background-image: url(https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1531&q=80);
+  background-repeat: no-repeat;
+  background-size:contain ;
+  height: 80px;
+  padding-top: 25px;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+
+  background-blend-mode: hue;
+}
+
+.hamburger
+{
+  font-size: 2.3em;
+  color: #000;
+}
+
+.hamburger:hover
+{
+color: #FFF;
+cursor: pointer;
+}
+
+
+.logo
+{
+  background: none;
+  border: 50px;
+}
+
+.jumbotron
+{
+  background: none;
+  text-align: center;
+}
+
+.jumbotron h1,
+.jumbotron h2,
+.jumbotron h3,
+.jumbotron h4,
+.jumbotron h5,
+.jumbotron h6,
+.jumbotron small
+{
+  color: #FFFFFF;
+}
 
 
 
