@@ -30,39 +30,168 @@
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
        
-            
-    <style>
-    
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> 
+
+        <style>
+
+/*****************globals*************/
+body {
+  font-family: 'open sans';
+  overflow-x: hidden; }
+
+img {
+  max-width: 100%; }
+
+.preview {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media screen and (max-width: 996px) {
+    .preview {
+      margin-bottom: 20px; } }
+
+.preview-pic {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.preview-thumbnail.nav-tabs {
+  border: none;
+  margin-top: 15px; }
+  .preview-thumbnail.nav-tabs li {
+    width: 18%;
+    margin-right: 2.5%; }
+    .preview-thumbnail.nav-tabs li img {
+      max-width: 100%;
+      display: block; }
+    .preview-thumbnail.nav-tabs li a {
+      padding: 0;
+      margin: 0; }
+    .preview-thumbnail.nav-tabs li:last-of-type {
+      margin-right: 0; }
+
+.tab-content {
+  overflow: hidden; }
+  .tab-content img {
+    width: 100%;
+    -webkit-animation-name: opacity;
+            animation-name: opacity;
+    -webkit-animation-duration: .3s;
+            animation-duration: .3s; }
+
+.card {
+  margin-top: 0px;
+  background:white;
+  padding: 3em;
+  line-height: 1.5em; }
+
+@media screen and (min-width: 997px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.colors {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.product-title, .price, .sizes, .colors {
+  text-transform: UPPERCASE;
+  font-weight: bold; }
+
+.checked, .price span {
+  color: ; }
+
+.product-title, .rating, .product-description, .price, .vote, .sizes {
+  margin-bottom: 15px; }
+
+.product-title {
+  margin-top: 0; }
+
+.size {
+  margin-right: 10px; }
+  .size:first-of-type {
+    margin-left: 40px; }
+
+.color {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  height: 2em;
+  width: 2em;
+  border-radius: 2px; }
+  .color:first-of-type {
+    margin-left: 20px; }
+
+.add-to-cart, .like {
+  background:black;
+  padding: 1.2em 1.5em;
+  border: none;
+  text-transform: UPPERCASE;
+  font-weight: bold;
+  color: #fff;
+  -webkit-transition: background .3s ease;
+          transition: background .3s ease; }
+ 
+
+.not-available {
+  text-align: center;
+  line-height: 2em; }
+  .not-available:before {
+    font-family: fontawesome;
+    content: "\f00d";
+    color: #fff; }
 
 
+.tooltip-inner {
+  padding: 1.3em; }
 
-.product-display { padding-left:0; display:flex; flex-wrap:wrap; }
-#product-image { width:100%; }
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
 
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
 
-
-#text-display { display:block; margin:0.25em; font-size:1.5em; font-family:sans-serif; text-align:center; font-weight:bold;  color:black}
-#text-preview-sans { font:bold 1.25em sans-serif; }
-#text-preview-serif { font:bold 1.25em serif; margin: 0 0 0 .25em}
-#text-preview-italic { font:bold italic 1.25em serif; margin: 0 0 0 .25em }
-#text-preview-color { background-color:white; border: solid 1px buttonface; margin: 0 0 0 .25em }
-.price { color:#369; }
-.price sup { font-size:55%; }
-
-.btn.add { height:1em;width:1em; line-height:.5em; font-size:5em; border-radius:100%; transition:all .3s; transition-timing-function:cubic-bezier(0,.25,.25,3); }
-
-/* .btn.add:hover { box-shadow:0 0 0 .025em #eee, 0 0 0 .1em #f00 }
- */
-}</style>
-        
-        <script>
-        window.odometerOptions = {
-          selector: '.odometer',
-          format: '(,ddd)', // Change how digit groups are formatted, and how many digits are shown after the decimal point
-          duration: 13000, // Change how long the javascript expects the CSS animation to take
-          theme: 'default'
-        };
-        </script>
+/*# sourceMappingURL=style.css.map */
+        </style>
+  
     </head>
     <body class="">
 
@@ -129,81 +258,75 @@
             </div>
         </header>
 
-              <div class="container">
-                <div class="row">
-                        <div class="left">
-                  <div class="col-xs-12">
-                <hr>
-                </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-9 col-sm-8 product-display">
-                    <div class="col-lg-6 product-preview">
-                     
-                     
-                        
-                      <img id="product-image" src="https://images.unsplash.com/photo-1452948491233-ad8a1ed01085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1653&q=80"  style="width:100%">
-                    </div>
-                    <div class="col-lg-6 product-data">
-                      <h3>Products from Tootsi Talu</h3>
-                      <div class="product-details">
-                        <p>Shop for seasonal products from Tootsi talu. Box will include seasonal vegetables, meat and fruits. </p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="container">
-                        <div class="row">
-                  <div class="col-md-3 col-sm-4 product-options well">
-                    <h4>Quantity</h4>
-                    <span data-toggle="modal" data-target="#orderGridModal"></span>
-                    <div class="form-group">
-                      <input class="form-control quantity" value="1" type="number" pattern="[0-9]*" inputmode="numeric" min="1"/>
-                    </div>
-                    <div class="price">
-                      <h1>1€/kg</h1>
-                    </div>
-                    <p><button> <a href="shop.html">Add to card </a></button></p>
-                
-                  </div>
-                </div>
-              </div>
-              </div>
-              
-              
-                    <div class="modal-footer"></div>
-                    
-                    </div>
-                  </div>
-                  <!-- /.modal-content -->
-                </div>
-                <!-- /.modal-dialog -->
-              </div>
-              <!-- /.modal -->
-              
-              
-                           
-                           
-                     
-                     
+              	<div class="container">
+                    <div class="card">
+                        <div class="container-fliud">
+                            <div class="wrapper row">
+                                <div class="preview col-md-6">
+                                    
+                                    <div class="preview-pic tab-content">
+                                      <div class="tab-pane active" id="pic-1"><img src="https://images.unsplash.com/photo-1556193387-27e48c08ed9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80" /></div>
+                                      <div class="tab-pane" id="pic-2"><img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" /></div>
+                                      <div class="tab-pane" id="pic-3"><img src="https://images.unsplash.com/photo-1557844352-c386c2db35ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" /></div>
+                                      <div class="tab-pane" id="pic-4"><img src="https://images.unsplash.com/photo-1552836931-d4b43ba75a1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80" /></div>
+                                      <div class="tab-pane" id="pic-5"><img src="https://images.unsplash.com/photo-1547978073-7efca4cc4a43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1710&q=80" /></div>
+                                    </div>
+                                    <ul class="preview-thumbnail nav nav-tabs">
+                                      <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="https://images.unsplash.com/photo-1556193387-27e48c08ed9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80" /></a></li>
+                                      <li><a data-target="#pic-2" data-toggle="tab"><img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" /></a></li>
+                                      <li><a data-target="#pic-3" data-toggle="tab"><img src="https://images.unsplash.com/photo-1557844352-c386c2db35ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" /></a></li>
+                                      <li><a data-target="#pic-4" data-toggle="tab"><img src="https://images.unsplash.com/photo-1552836931-d4b43ba75a1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80" /></a></li>
+                                      <li><a data-target="#pic-5" data-toggle="tab"><img src="https://images.unsplash.com/photo-1547978073-7efca4cc4a43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1710&q=80" /></a></li>
+                                    </ul>
+                                    
                                 </div>
-                              </td>
-                            </tr>
-                          </table>
+                                <div class="details col-md-6">
+                                    <h3 class="product-title">Farmer's choice box</h3>
+                                    <div class="rating">
+                                        <div class="stars">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        
+                                    </div>
+                                    <p class="product-description">Farmer's choice box includes seasonal fresh vegetables and fruits straight from the ground. Subscribe and get fresh food every week.</p>
+                                    <h4 class="price">current price: <span>20€</span></h4>
+                                    <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <stron g>(87 votes)</strong></p>
+                                   
+                                    <div class="action">
+                                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                        
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  
-                      
-              
-                
-                  </div>
-                  <!-- /.modal-content -->
                 </div>
-                <!-- /.modal-dialog -->
-              </div>
-              <!-- /.modal -->
 
+              <section id="contact" class="prefooter wow fadeInUp" data-wow-delay="300ms">
+                    <!-- change the image in style.css to the class .prefooter .container-fluid [approximately row 154] -->
+                    <div class="container-fluid">
+                        <div class="container">
+                            <div class="row">
+                               
+                                 <div class="col-md-8">
+                                    <h3>Get back on the Ground!</h3>
+                                    <p>Register for our newsletter and get the latest news.</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Your email here...">
+                                            <br>
+                                            <button type="button" class="btn btn-danger">Sign Up</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
         <footer>
             <div class="container">

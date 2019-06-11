@@ -224,8 +224,11 @@ header .container-fluid
 
 
 .gallery
+
+
 {
     background-color: #dddddd;
+   
 }
 .prefooter .container-fluid
 {
@@ -261,7 +264,7 @@ header .container-fluid
 footer
 {
     background-color: black;
-    padding-top: 2em;
+    padding-top: 1em;
     padding-bottom: 1em;
 }
 
@@ -276,7 +279,4 @@ footer p
     color:gainsboro;
 }
 
-.social
-{
-    padding-top: 50px;
-}
+
