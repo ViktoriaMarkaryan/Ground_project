@@ -138,10 +138,10 @@ header .container-fluid
   
   background-image: url(https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1531&q=80);
   background-repeat: no-repeat;
-  background-size:contain ;
-  height: 80px;
-  padding-top: 25px;
-  background-color: rgba(0, 0, 0, 0.3) !important;
+  
+  
+  padding-top: 50px;
+  background-color: rgba(158, 157, 157, 0.534) !important;
 
   background-blend-mode: hue;
 }
@@ -154,7 +154,7 @@ header .container-fluid
 
 .hamburger:hover
 {
-color: #FFF;
+color: rgb(0, 0, 0);
 cursor: pointer;
 }
 
@@ -179,8 +179,78 @@ cursor: pointer;
 .jumbotron h6,
 .jumbotron small
 {
+  color:black;
+}
+
+.jumbotron p
+{
+  color:black;
+  margin-bottom: 5%;
+}
+
+
+/*------------------------------------*\
+SECTIONS
+\*------------------------------------*/
+
+
+
+.opaline
+{
+  padding-top: 3em;
+  padding-bottom: 3em;
+  background-color: rgba(0, 0, 0, 0.226);
+}
+
+.opaline h1,
+.opaline h2,
+.opaline h3,
+.opaline h4,
+.opaline h5,
+.opaline h6,
+.opaline p
+{
   color: #FFFFFF;
 }
+
+.opaline .boxes
+{
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  border: 1px solid #FFF;
+}
+
+
+
+.gallery
+{
+  background-color: #dddddd;
+}
+.prefooter .container-fluid
+{
+  background: linear-gradient(
+    rgba(33, 37, 43, 0.6),
+    rgba(33, 37, 43, 0.6)
+  ),
+
+  url(https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1531&q=80);
+}
+
+.prefooter h1,
+.prefooter h2,
+.prefooter h3,
+.prefooter h4,
+.prefooter h5,
+.prefooter h6,
+.prefooter p
+{
+  color: #FFFFFF;
+}
+
+
+
+
 
 
 

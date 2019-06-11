@@ -29,37 +29,31 @@
         <link rel="stylesheet" href="assets/css/masonry.css">
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <style>
+       
             
-                .card {
-                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                  max-width: 300px;
-                  margin: auto;
-                  text-align: center;
-                  font-family: arial;
-                }
-                
-                .price {
-                  color: grey;
-                  font-size: 22px;
-                }
-                
-                .card button {
-                  border: none;
-                  outline: 0;
-                  padding: 12px;
-                  color: white;
-                  background-color: #000;
-                  text-align: center;
-                  cursor: pointer;
-                  width: 100%;
-                  font-size: 18px;
-                }
-                
-                .card button:hover {
-                  opacity: 0.7;
-                }
-                </style>
+    <style>
+    
+
+
+
+.product-display { padding-left:0; display:flex; flex-wrap:wrap; }
+#product-image { width:100%; }
+
+
+
+#text-display { display:block; margin:0.25em; font-size:1.5em; font-family:sans-serif; text-align:center; font-weight:bold;  color:black}
+#text-preview-sans { font:bold 1.25em sans-serif; }
+#text-preview-serif { font:bold 1.25em serif; margin: 0 0 0 .25em}
+#text-preview-italic { font:bold italic 1.25em serif; margin: 0 0 0 .25em }
+#text-preview-color { background-color:white; border: solid 1px buttonface; margin: 0 0 0 .25em }
+.price { color:#369; }
+.price sup { font-size:55%; }
+
+.btn.add { height:1em;width:1em; line-height:.5em; font-size:5em; border-radius:100%; transition:all .3s; transition-timing-function:cubic-bezier(0,.25,.25,3); }
+
+/* .btn.add:hover { box-shadow:0 0 0 .025em #eee, 0 0 0 .1em #f00 }
+ */
+}</style>
         
         <script>
         window.odometerOptions = {
@@ -100,10 +94,10 @@
       <!-- Pushy Menu -->
       <nav class="pushy pushy-left">
         <ul class="list-unstyled">
-            <li><a href="#home">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="shop.html">Shop</a></li>
-            <li><a href="#about">About us</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">About us</a></li>
+            <li><a href="index.html">Contact</a></li>
         </ul>
       </nav>
 
@@ -135,10 +129,80 @@
             </div>
         </header>
 
-        
-
-
-
+              <div class="container">
+                <div class="row">
+                        <div class="left">
+                  <div class="col-xs-12">
+                <hr>
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-9 col-sm-8 product-display">
+                    <div class="col-lg-6 product-preview">
+                     
+                     
+                        
+                      <img id="product-image" src="https://images.unsplash.com/photo-1452948491233-ad8a1ed01085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1653&q=80"  style="width:100%">
+                    </div>
+                    <div class="col-lg-6 product-data">
+                      <h3>Products from Tootsi Talu</h3>
+                      <div class="product-details">
+                        <p>Shop for seasonal products from Tootsi talu. Box will include seasonal vegetables, meat and fruits. </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="container">
+                        <div class="row">
+                  <div class="col-md-3 col-sm-4 product-options well">
+                    <h4>Quantity</h4>
+                    <span data-toggle="modal" data-target="#orderGridModal"></span>
+                    <div class="form-group">
+                      <input class="form-control quantity" value="1" type="number" pattern="[0-9]*" inputmode="numeric" min="1"/>
+                    </div>
+                    <div class="price">
+                      <h1>1€/kg</h1>
+                    </div>
+                    <p><button> <a href="shop.html">Add to card </a></button></p>
+                
+                  </div>
+                </div>
+              </div>
+              </div>
+              
+              
+                    <div class="modal-footer"></div>
+                    
+                    </div>
+                  </div>
+                  <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+              </div>
+              <!-- /.modal -->
+              
+              
+                           
+                           
+                     
+                     
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  
+                      
+              
+                
+                  </div>
+                  <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+              </div>
+              <!-- /.modal -->
 
 
         <footer>
