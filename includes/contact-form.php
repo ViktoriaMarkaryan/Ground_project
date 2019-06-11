@@ -1,21 +1,23 @@
 <?php
 
 ini_set('display_errors', 'on');
-$db = new PDO('mysql:host=127.0.0.1:3306;dbname=pdo', 'root', 'root');
+$db = new PDO('mysql:host=127.0.0.1:3306;dbname=test', 'root', 'root');
 if (!empty($_POST)){
-    $email = $_POST['email'];
     $firstName = $_POST['first_name'];
     $lastName = $_POST['last_name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
     
     $user = $db->prepare("
-        INSERT INTO users (email, first_name, last_name)
-        VALUES (:email, :first_name, :last_name)
+        INSERT INTO users (first_name, last_name, email, password)
+        VALUES (:first_name, :last_name, :email, :password)
     ");
     
     $user->execute([
-        'email' => $email,
         'first_name' => $firstName,
         'last_name' => $lastName,
+        'email' => $email,
+        'password' => $password,
     ]);    
 }
 ?>
@@ -23,13 +25,14 @@ if (!empty($_POST)){
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>PDO</title>
+        <title>Registration/ Log in page</title>
     </head>
     <body>
-        <form action="index.php" method="post" autocomplete="off">
-            <input type="text" name="email" placeholder="Email">
-            <input type="text" name="first_name" placeholder="First name">
-            <input type="text" name="last_name" placeholder="Last name">
+        <form action="index.php" method="post" autocomplete="off"> <br>
+            <input type="text" name="first_name" placeholder="First name"> <br>
+            <input type="text" name="last_name" placeholder="Last name"> <br>
+            <input type="email" name="email" placeholder="Email"> <br>
+            <input type="password" name="password" maxlenght="20" placeholder="Password">
             <input type="submit" value="Register">
         </form>
     </body>
