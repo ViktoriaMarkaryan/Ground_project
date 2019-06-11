@@ -26,13 +26,19 @@ if (!empty($_POST)){
     <head>
         <meta charset="UTF-8">
         <title>Registration/ Log in page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
-        <form action="index.php" method="post" autocomplete="off"> <br>
-            <input type="text" name="first_name" placeholder="First name"> <br>
-            <input type="text" name="last_name" placeholder="Last name"> <br>
-            <input type="email" name="email" placeholder="Email"> <br>
-            <input type="password" name="password" maxlenght="20" placeholder="Password">
+        <form action="index.php" method="post" autocomplete="off">
+            <input type="text" name="first_name" placeholder="First name"> 
+            <br>
+            <input type="text" name="last_name" placeholder="Last name"> 
+            <br>
+            <input type="email" name="email" placeholder="Email"> 
+            <br>
+            <input type="password" name="password" maxlenght="20" placeholder="Password"> 
+            <br>
             <input type="submit" value="Register">
         </form>
     </body>
