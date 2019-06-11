@@ -112,10 +112,6 @@ span.x4:before, i.x4:before
     padding: 10px;
   }
 
-   /* ------------------------------------ */
-   a {
-     color: #dddddd;
-   }
   /* ------------------------------------ */
   .topbar-child3 {
     position: absolute;
@@ -238,7 +234,7 @@ header .container-fluid
       rgba(33, 37, 43, 0.6)
     ),
 
-    url(https://images.unsplash.com/reserve/HgZuGu3gSD6db21T3lxm_San%20Zenone.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+    url(https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1531&q=80);
 }
 
 .prefooter h1,
