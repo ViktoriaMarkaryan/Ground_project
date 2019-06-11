@@ -1,3 +1,27 @@
+<?php
+
+ini_set('display_errors', 'on');
+$db = new PDO('mysql:host=127.0.0.1:3306;dbname=test', 'root', 'root');
+if (!empty($_POST)){
+    $firstName = $_POST['first_name'];
+    $lastName = $_POST['last_name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    
+    $user = $db->prepare("
+        INSERT INTO users (first_name, last_name, email, password)
+        VALUES (:first_name, :last_name, :email, :password)
+    ");
+    
+    $user->execute([
+        'first_name' => $firstName,
+        'last_name' => $lastName,
+        'email' => $email,
+        'password' => $password,
+    ]);    
+}
+?>
+
 <html>
     <head>
         <title> Sign in / Sign up </title>
@@ -24,7 +48,6 @@
                                     <label for="validationServer02">Last name</label>
                                     <input type="text" class="form-control is-invalid" id="validationServer02" placeholder="Last name"  required>
                                     <div class="invalid-feedback">
-                                      choose sth
                                     </div>
                                   </div>
                                   
@@ -49,13 +72,6 @@
                         <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City" required>
                         <div class="invalid-feedback">
                           Please provide a valid city.
-                        </div>
-                      </div>
-                      <div class="col-md-3 mb-3">
-                        <label for="validationServer04">State</label>
-                        <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid state.
                         </div>
                       </div>
                     </div>
