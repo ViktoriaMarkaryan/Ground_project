@@ -1,2 +1,6 @@
-<a href = "/login.php">Sign in </a><br>
-<a href = "/signup.php">Sign up </a>
+<?php
+require "db.php";
+?>
+
+<a href = "login.php">Sign in </a><br>
+<a href = "signup.php">Sign up </a>
