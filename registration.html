@@ -25,10 +25,30 @@
                   <label for="validationServer02">Last name</label>
                   <input type="text" class="form-control is-invalid" id="validationServer02" placeholder="Last name"  required>
                     <div class="invalid-feedback">
-                      Write your second name
+                      Write your last name
                     </div>
                 </div>      
               </div>
+
+              <div class="form-row">
+                  <div class=" mb-3">
+                    <label for="validationServer02">Email</label>
+                    <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="Email"  required>
+                      <div class="invalid-feedback">
+                        Write an email
+                      </div>
+                  </div>      
+                </div>
+
+                <div class="form-row">
+                    <div class=" mb-3">
+                      <label for="validationServer02">Password</label>
+                      <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="Password"  required>
+                        <div class="invalid-feedback">
+                          Create a password 
+                        </div>
+                    </div>      
+                  </div>    
 
               <div class="form-group">
                 <div class="form-check">
@@ -59,3 +79,50 @@
           integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
+
+<!--Use after if fail-->
+<!--<?php
+
+ini_set('display_errors', 'on');
+$db = new PDO('mysql:host=127.0.0.1:3306;dbname=test', 'root', 'root');
+if (!empty($_POST)){
+    $firstName = $_POST['first_name'];
+    $lastName = $_POST['last_name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    
+    $user = $db->prepare("
+        INSERT INTO users (first_name, last_name, email, password)
+        VALUES (:first_name, :last_name, :email, :password)
+    ");
+    
+    $user->execute([
+        'first_name' => $firstName,
+        'last_name' => $lastName,
+        'email' => $email,
+        'password' => $password,
+    ]);    
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign in / Sign up</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+      <form action="index.php" method="post" autocomplete="off">
+          <input type="text" name="first_name" placeholder="First name"> 
+          <br>
+          <input type="text" name="last_name" placeholder="Last name"> 
+          <br>
+          <input type="email" name="email" placeholder="Email"> 
+          <br>
+          <input type="password" name="password" minlenght="8" maxlenght="20" placeholder="Password"> 
+          <br>
+          <input type="submit" value="Register">
+      </form>
+    </body>    
+</html>-->
